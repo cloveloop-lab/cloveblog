@@ -1,0 +1,15 @@
+{
+  "name": "Oak Harbor Web Designs",
+  "email": "hello@cloveloop.com",
+  "phone": "",
+  "phoneFormatted": "",
+  "address": {
+    "lineOne": "Windsor Terrace",
+    "lineTwo": "",
+    "city": "Dun Laoghaire",
+    "county": "Dublin",
+    "postcode": "A96",
+    "mapLink": "https://maps.app.goo.gl/6uZyfdNQMuKL2FLD8"
+  },
+  "domain": "cloveloop.com"
+}
