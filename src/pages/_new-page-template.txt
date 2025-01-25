@@ -1,0 +1,14 @@
+---
+layout: 'base.html' 
+description: "We develop modern, hand-coded websites for small businesses across Ireland. No page builders - just clean, fast, and SEO-friendly code that delivers results. Professional web design services starting at €175/month."
+metaTitle: 'Cloveloop | Professional Web Design Studio | Starting at €175'
+tagTitle: 'Title that shows up on google, and is concatenated with | {{ client.name }}'
+preloadImg: '/images/imageName.format'
+preloadCSS: '/css/fileName.css'
+permalink: 'page/'
+eleventyNavigation:
+    key: Navigation Name
+    order: 1000
+---
+
+<!-- Enter html code below -->

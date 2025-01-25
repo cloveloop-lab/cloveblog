@@ -1,0 +1,231 @@
+/* Base Variables */
+:root {
+  /* Cores principais */
+  --primary: #283e4f;
+  --primary-light: #f8fbfd;
+  --accent: #0066FF;
+  --accent-dark: #0052CC;
+  
+  /* Cores de texto */
+  --text: #283e4f;
+  --text-light: #455965;
+  
+  /* Cores de background */
+  --bg: #FFFFFF;
+  --bg-light: #F5F9FF;
+  --bg-dark: #ECF3FE;
+  
+  /* Elementos de UI */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --radius-full: 100px;
+  
+  /* Sombras */
+  --shadow: 0 20px 40px rgba(0,0,0,0.1);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+  --shadow-lg: 0 6px 16px rgba(0,0,0,0.2);
+  --shadow-bd: 0 4px 15px rgba(69, 107, 233, 0.106);
+  
+  /* Animações */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease;
+  --transition-slow: all 0.5s ease;
+  
+  /* Layout */
+  --container-width: 1400px;
+  --header-height: 80px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-2xl: 8rem;
+
+  /* Stacking Scroll */
+  --space-unit: 1em;
+  --space-xxxxs: calc(0.125 * var(--space-unit));
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs: calc(0.375 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+  --component-padding: var(--space-md);
+  
+  /* Z-index */
+  --z-nav: 1000;
+  --z-modal: 2000;
+  --z-floating: 999;
+}
+
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Settings HTML/Body */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* Classes de Container */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+/* Base Typography */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+/* Botões Base */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.btn-outline {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Classes de Grid */
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.smooth-wrapper {
+  overflow: hidden;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+/* Utilitários */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.hidden { display: none; }
+.visible { display: block; }
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+
+/* Media Queries Base */
+@media (max-width: 1024px) {
+  html { font-size: 15px; }
+  
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+  
+  .grid-3, 
+  .grid-4 { grid-template-columns: 1fr; }
+  
+  .container { padding: 0 var(--spacing-sm); }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 13px; }
+  
+  .grid-2 { grid-template-columns: 1fr; }
+  
+  .section { padding: var(--spacing-lg) 0; }
+}

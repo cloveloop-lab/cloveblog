@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags básicas -->
+    <meta name="description" content="Choose from our flexible web design packages. Professional websites hand-coded for Irish businesses. Monthly plans from €175 with no hidden costs. Includes hosting, maintenance, and updates.">
+    <meta name="keywords" content="web design pricing, website packages, ireland web design costs, business website pricing">
+    <meta name="author" content="Cloveloop">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0066FF">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cloveloop.com/pricing">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cloveloop">
+    <meta property="og:title" content="Web Design Pricing & Packages | Cloveloop | From €175/month">
+    <meta property="og:description" content="Choose from our flexible web design packages. Professional websites hand-coded for Irish businesses. Monthly plans from €175 with no hidden costs. Includes hosting, maintenance, and updates.">
+    <meta property="og:url" content="https://cloveloop.com/pages/pricing.html">
+    <meta property="og:image" content="https://cloveloop.com/assets/images/og-banner.png">
+    <meta property="og:image:secure_url" content="https://cloveloop.com/assets/images/og-banner.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+        
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Design Pricing & Packages | Cloveloop | From €175/month">
+    <meta name="twitter:description" content="Choose from our flexible web design packages. Professional websites hand-coded for Irish businesses. Monthly plans from €175 with no hidden costs. Includes hosting, maintenance, and updates.">
+    <meta name="twitter:image" content="https://cloveloop.com/assets/images/og-banner.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="../site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/pricing.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/root.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProductCollection",
+          "@id": "https://cloveloop.com/pricing",
+          "name": "Web Design Pricing & Packages | Cloveloop",
+          "description": "Choose from our flexible web design packages. Professional websites hand-coded for Irish businesses. Monthly plans from €175.",
+          "url": "https://cloveloop.com/pricing",
+          "image": "https://cloveloop.com/assets/images/og-banner.png",
+          "itemListElement": [
+            {
+              "@type": "Product",
+              "name": "Starter Package",
+              "description": "Professional website with up to 5 pages",
+              "image": "https://cloveloop.com/assets/images/og-banner.png",
+              "offers": {
+                "@type": "Offer",
+                "price": "175",
+                "priceCurrency": "EUR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Business Package",
+              "description": "Advanced website with extended features",
+              "image": "https://cloveloop.com/assets/images/og-banner.png",
+              "offers": {
+                "@type": "Offer",
+                "price": "699",
+                "priceCurrency": "EUR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "name": "Professional Package",
+              "description": "Complete website with custom features",
+              "image": "https://cloveloop.com/assets/images/og-banner.png",
+              "offers": {
+                "@type": "Offer",
+                "price": "1199",
+                "priceCurrency": "EUR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "Cloveloop",
+            "url": "https://cloveloop.com",
+            "logo": "https://cloveloop.com/assets/images/logos/logo-dark.svg"
+          }
+        }
+        </script>
+
+        <title>Plans and Prices - Cloveloop | Digital Experience Studio</title>
+</head>
+<body data-page="pricing">
+    <!-- Navigation -->
+    <div id="header"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <span class="hero-label">Pricing</span>
+                <h1>Choose the right plan for your business</h1>
+                <p>Customized solutions for companies of all sizes. No hidden costs, free updates and premium support.</p>
+
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="billing-option active">Monthly</span>
+                    <div class="toggle-switch" id="billingToggle"></div>
+                    <span class="billing-option">Yearly <small>-20%</small></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">399</span>
+                        </div>
+                        <p>Ideal for small businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1-2 Responsive pages</li>
+                        <li><i class="fas fa-check"></i> Modern Design</li>
+                        <li><i class="fas fa-check"></i> Hosting (1 year)</li>
+                        <li><i class="fas fa-check"></i> Domain (.ie ou .com)</li>
+                        <li><i class="fas fa-check"></i> Initial Support</li>
+                    </ul>
+                    <a href="../index.html/#contact" class="btn btn-outline">Choose Plan</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Business</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">699</span>
+                        </div>
+                        <p>Perfect for growing companies</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 5 personalized pages</li>
+                        <li><i class="fas fa-check"></i> Premium Design</li>
+                        <li><i class="fas fa-check"></i> Basic SEO</li>
+                        <li><i class="fas fa-check"></i> Integration with social networks</li>
+                        <li><i class="fas fa-check"></i> Analytics and reports</li>
+                        <li><i class="fas fa-check"></i> 6 months of support</li>
+                        <li><i class="fas fa-check"></i> Performance optimization</li>
+                    </ul>
+                    <a href="../index.html/#contact" class="btn btn-outline">Choose Plan</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount">1,199</span>
+                        </div>
+                        <p>For companies seeking excellence</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 10 pages</li>
+                        <li><i class="fas fa-check"></i> Exclusive Design</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check"></i> Integrated blog</li>
+                        <li><i class="fas fa-check"></i> CMS Personalized</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Monthly consultancy</li>
+                        <li><i class="fas fa-check"></i> Digital Marketing</li>
+                    </ul>
+                    <a href="../index.html/#contact" class="btn btn-outline">Choose Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="comparison">
+            <div class="comparison-header">
+                <h2>Compare plans</h2>
+                <p>See in detail what each plan offers</p>
+            </div>
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div>Features</div>
+                    <div class="table-centered">Starter</div>
+                    <div class="table-centered">Business</div>
+                    <div class="table-centered">Professional</div>
+                </div>
+                <!-- Design & Layout -->
+                <div class="table-row">
+                    <div class="feature-title">Responsive Pages</div>
+                    <div class="feature-check">1-2</div>
+                    <div class="feature-check">Up to 5</div>
+                    <div class="feature-check">Up to 10</div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-title">Personalized Design</div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-title">Design Mobile-First</div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <!-- Performance & SEO -->
+                <div class="table-row">
+                    <div class="feature-title">Performance optimization</div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-title">Basic SEO</div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-title">Advanced SEO</div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <!-- Extras -->
+                <div class="table-row">
+                    <div class="feature-title">Integrated Blog</div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-title">Customized CMS</div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-minus"></i></div>
+                    <div class="feature-check"><i class="fas fa-check"></i></div>
+                </div>
+                <!-- Support -->
+                <div class="table-row">
+                    <div class="feature-title">Technical Support</div>
+                    <div class="feature-check">30 days</div>
+                    <div class="feature-check">6 months</div>
+                    <div class="feature-check">12 months</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="faq-header">
+                <h2>FAQ</h2>
+                <p>Ask questions about our plans and services</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to develop my website?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Development time varies according to the complexity of the project. On average, basic websites take 2-3 weeks, while more complex projects can take 6-8 weeks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do the prices include hosting and domain?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our plans include hosting for 1 year and domain registration (.ie or .com). After the first year, you can renew these services with us or transfer them to another provider.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I upgrade my plan later?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can upgrade your plan at any time. The difference in value will be calculated in proportion to the remaining period of your current contract.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="cta-content">
+                <h2>Ready to get started?</h2>
+                <p>Contact us today and transform your digital presence.</p>
+                <a href="../index.html/#contact" class="btn btn-primary">Talk to an expert</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="footer"></div>
+    </footer>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/67806fe049e2fd8dfe056336/1ih6ra233';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script src="../assets/js/pricing.js"></script>
+    <script src="../assets/js/components/components.js"></script>
+    <script src="../assets/js/components/navigation.js"></script>
+    <script type="module" src="../assets/js/modules/core.js"></script>
+    <script type="module" src="../assets/js/modules/stats.js"></script>
+</body>
+</html>
